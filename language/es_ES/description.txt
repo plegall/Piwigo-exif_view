@@ -1,0 +1,1 @@
+Convierte  EXIF en valores humanos legible. Corresponde a la especificación EXIF 2.2, detalles en http://www.exif.org. Fácilmente extensible.
