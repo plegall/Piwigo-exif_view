@@ -1,8 +1,8 @@
 <?php /*
 Plugin Name: Exif View
-Version: 0.2
+Version: auto
 Description: Converts EXIF values to human readable localized values. Corresponds to EXIF specification 2.2, details in http://www.exif.org. Easily extensible.
-Plugin URI: http://www.phpwebgallery.net
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=155
 Author: Martin Javorek
 Author URI: mailto:maple@seznam.cz&subject=PWG%20EXIF%20View
 */
@@ -95,7 +95,11 @@ function exif_key_translation($key, $value) {
    
    // Date Time Original
    if (!(strpos($key, 'DateTimeOriginal') === FALSE)) {
-      return formatDate($value);
+     // to fix bug:1862 the easiest way without releasing a new version of
+     // Piwigo itself, it's better to bypass the date format function
+     //
+     // return formatDate($value);
+     return $value;
    }
 
    // exposure time
