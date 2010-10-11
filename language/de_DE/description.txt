@@ -1,0 +1,3 @@
+Konvertiert die Exif-Daten in ein lesbares Format. 
+Entspricht den EXIF-Spezifikation 2.2, Details auf http://www.exif.org
+Leicht erweiterbar.
