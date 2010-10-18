@@ -1,0 +1,1 @@
+Converte gli EXIF in valori "umanamente leggibili". Conforme alle specificazioni Exif 2.2, per più dettagli http://www.exif.org. Facilmente estendibile.
