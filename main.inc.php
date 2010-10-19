@@ -112,7 +112,8 @@ function exif_key_translation($key, $value) {
       if ($tokens[1] == 1) {
          return $tokens[0].' s';
       } else {
-         return $tokens[0].'/'.$tokens[1].' s';
+        return '1/'.floor(1/($tokens[0]/$tokens[1])).' s';
+         // return $tokens[0].'/'.$tokens[1].' s';
       }
    }
 
