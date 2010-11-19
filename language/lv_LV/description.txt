@@ -1,0 +1,1 @@
+Konvertē EXIF lielumus lokālā cilvēciski lasāmā izskatā. Saskaņā ar EXIF specifikāciju Nr.2.2, detaļas http://www.exif.org. Viegli paplašināms.
