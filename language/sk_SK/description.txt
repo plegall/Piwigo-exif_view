@@ -1,0 +1,1 @@
+Konvertovanie EXIF hodnôt na lokalizované hodnoty. Korešponduje s EXIF špecifikáciou 2.2, detail na http://www.exif.org.
