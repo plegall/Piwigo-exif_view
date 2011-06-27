@@ -1,13 +1,10 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | PhpWebGallery - a PHP based picture gallery                           |
-// | Copyright (C) 2002-2003 Pierrick LE GALL - pierrick@phpwebgallery.net |
-// | Copyright (C) 2003-2007 PhpWebGallery Team - http://phpwebgallery.net |
+// | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
-// | file          : $Id: index.php 4660 2010-01-10 15:56:41Z ddtddt $
-// | last update   : $Date: 2010-01-10 16:56:41 +0100 (dim. 10 janv. 2010) $
-// | last modifier : $Author: ddtddt $
-// | revision      : $Revision: 4660 $
+// | Copyright(C) 2008-2011 Piwigo Team                  http://piwigo.org |
+// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
+// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
 // +-----------------------------------------------------------------------+
 // | This program is free software; you can redistribute it and/or modify  |
 // | it under the terms of the GNU General Public License as published by  |
