@@ -1,0 +1,1 @@
+Konwertuje tagi EXIF do bardziej czytelnego formatu. Zgodne z specyfikacją EXIF 2.2, więcej: http://www.exif.org. Łatwy do rozbudowy. 
