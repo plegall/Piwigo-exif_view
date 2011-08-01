@@ -1,0 +1,1 @@
+Konverterar EXIF data till läsbara lokala värden. Överensstämmer med EXIF specifikation 2.2, detaljer på http://www.exif.org. Enkelt att utöka.
