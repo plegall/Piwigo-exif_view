@@ -1,6 +1,6 @@
 <?php /*
 Plugin Name: Exif View
-Version: 2.2.a
+Version: auto
 Description: Converts EXIF values to human readable localized values. Corresponds to EXIF specification 2.2, details in http://www.exif.org. Easily extensible.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=155
 Author: Martin Javorek
