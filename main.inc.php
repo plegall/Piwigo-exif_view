@@ -220,7 +220,15 @@ function exif_key_translation($key, $value) {
    // distance to subject
    if (!(strpos($key, 'SubjectDistance') === FALSE)) {
       $tokens = explode('/', $value);
-      return ($tokens[0]/$tokens[1]).' m';
+      if (isset($tokens[1]))
+      {  
+        $distance = $tokens[0]/$tokens[1];
+      }
+      else
+      {  
+        $distance = $value;
+      }
+      return $distance.' m';
    }
 
    // white balance
