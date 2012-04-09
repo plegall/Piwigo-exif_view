@@ -22,4 +22,8 @@
 // +-----------------------------------------------------------------------+
 $lang['exif_field_Contrast'] = 'Контрастність';
 $lang['exif_value_white_balance_manual'] = 'посібник';
+$lang['exif_field_DateTimeOriginal'] = 'Дата і час оригіналу';
+$lang['exif_field_DigitalZoomRatio'] = 'Цифровий зум';
+$lang['exif_field_ExifVersion'] = 'EXIF';
+$lang['exif_field_ExposureBiasValue'] = 'Компенсація експозиції';
 ?>
