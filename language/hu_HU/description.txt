@@ -1,0 +1,1 @@
+A k&eacute;pek mentett EXIF adatait alak&iacute;tja &aacute;t olvashat&oacute; form&aacute;tumba, megfelel az EXIF 2.2 elő&iacute;r&aacute;sainak. Tov&aacute;bbi r&eacute;szletek: http://www.exif.org . K&ouml;nnyed&eacute;n bőv&iacute;thető.
