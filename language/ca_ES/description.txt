@@ -1,1 +1,1 @@
-(Exif) &eacute;s una especificaci&oacute; per a formats d'arxius d'imatges utilitzada per les c&agrave;meres digitals als quals s'agreguen etiquetes espec&iacute;fiques de metadades.
+(Exif) &Eacute;s una especificaci&oacute; per a formats d'arxius d'imatges utilitzada per les c&agrave;meres digitals als quals s'agreguen etiquetes espec&iacute;fiques de metadades.
