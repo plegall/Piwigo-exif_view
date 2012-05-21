@@ -53,4 +53,5 @@ $lang['exif_value_exposure_program_aperture'] = 'προτεραιότητα δι
 $lang['exif_value_exposure_program_creative'] = 'δημιουργικό';
 $lang['exif_value_exposure_program_landscape'] = 'τοπίο';
 $lang['exif_value_exposure_program_manual'] = 'χειροκίνητο';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Φακός';
 ?>
