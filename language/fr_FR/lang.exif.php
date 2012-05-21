@@ -5,7 +5,6 @@
 //$lang_info['direction'] = 'ltr';
 //$lang_info['code'] = 'fr';
 //é
-global $lang;
 
 $lang['exif_field_Contrast'] = 'Contraste';
 $lang['exif_field_DateTimeOriginal'] = 'Date et heure (originel)';

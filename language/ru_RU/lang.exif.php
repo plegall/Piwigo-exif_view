@@ -1,10 +1,4 @@
 <?php
-//$lang_info['language_name'] = 'English';
-//$lang_info['country'] = ''Great Britain';
-//$lang_info['charset'] = 'iso-8859-1';
-//$lang_info['direction'] = 'ltr';
-//$lang_info['code'] = 'en';
-global $lang;
 
 $lang['exif_field_Contrast'] = 'Контраст';
 $lang['exif_field_DateTimeOriginal'] = 'Дата/время съемки оригинала';

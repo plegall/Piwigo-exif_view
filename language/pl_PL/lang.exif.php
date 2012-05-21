@@ -1,7 +1,5 @@
 <?php
 
-global $lang;
-
 $lang['exif_field_Contrast'] = 'Kontrast';
 $lang['exif_field_DateTimeOriginal'] = 'Czas oryginału';
 $lang['exif_field_DigitalZoomRatio'] = 'Zoom cyfrowy';

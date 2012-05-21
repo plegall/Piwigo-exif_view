@@ -1,7 +1,5 @@
 <?php
 
-global $lang;
-
 $lang['exif_field_Contrast'] = 'Contraste';
 $lang['exif_field_DateTimeOriginal'] = 'Fecha y hora (origen)';
 $lang['exif_field_DigitalZoomRatio'] = 'Digital Zoom';

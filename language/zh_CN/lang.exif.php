@@ -4,7 +4,6 @@
 //$lang_info['charset'] = 'gb2312';
 //$lang_info['direction'] = 'by Winson';
 //$lang_info['code'] = 'zh';
-global $lang;
 
 $lang['exif_field_Contrast'] = '对比度';
 $lang['exif_field_DateTimeOriginal'] = '原始拍摄时间';

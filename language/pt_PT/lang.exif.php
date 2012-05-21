@@ -94,8 +94,7 @@ $lang['exif_value_metering_mode_pattern'] = 'pdrão';
 $lang['exif_value_metering_mode_spot'] = 'ponto';
 $lang['exif_value_metering_mode_unknown'] = 'desconhecido';
 $lang['exif_value_red_eye'] = 'redução de vista vermelha';
-$lang['exif_value_saturation_hard'] = 'dificil
-';
+$lang['exif_value_saturation_hard'] = 'dificil';
 $lang['exif_value_saturation_low'] = 'baixo';
 $lang['exif_value_saturation_normal'] = 'normal';
 $lang['exif_value_sharpness_hard'] = 'dificil';

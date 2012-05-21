@@ -4,7 +4,6 @@
 //$lang_info['charset'] = 'UTF-8';
 //$lang_info['direction'] = 'ltr';
 //$lang_info['code'] = 'sk';
-global $lang;
 
 $lang['exif_field_Contrast'] = 'Kontrast';
 $lang['exif_field_DateTimeOriginal'] = 'Vytvorené';

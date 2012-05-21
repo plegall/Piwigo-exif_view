@@ -1,5 +1,4 @@
 <?php
-global $lang;
 
 $lang['exif_field_Contrast'] = 'تباين';
 $lang['exif_field_DateTimeOriginal'] = 'تاريخ الوقت في الأصل';

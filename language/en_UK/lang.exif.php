@@ -4,7 +4,6 @@
 //$lang_info['charset'] = 'iso-8859-1';
 //$lang_info['direction'] = 'ltr';
 //$lang_info['code'] = 'en';
-global $lang;
 
 $lang['exif_field_Contrast'] = 'Contrast';
 $lang['exif_field_DateTimeOriginal'] = 'Date Time of Original';

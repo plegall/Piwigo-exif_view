@@ -1,5 +1,4 @@
 <?php
-global $lang;
 
 $lang['exif_field_Contrast'] = 'Kontrast';
 $lang['exif_field_DateTimeOriginal'] = 'Tag/Uhrzeit des Originals';
