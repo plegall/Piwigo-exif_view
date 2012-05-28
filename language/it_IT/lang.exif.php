@@ -86,4 +86,6 @@ $lang['exif_value_sharpness_soft'] = 'leggera';
 $lang['exif_value_white_balance_auto'] = 'automatico';
 $lang['exif_value_white_balance_manual'] = 'manuale';
 
+$lang['exif_field_SubjectDistance'] = 'Distanza del soggetto';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Lente';
 ?>
