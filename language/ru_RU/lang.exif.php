@@ -82,4 +82,6 @@ $lang['exif_value_white_balance_auto'] = 'Авто';
 $lang['exif_value_white_balance_manual'] = 'Ручной';
 
 
+$lang['exif_field_SubjectDistance'] = 'Расстояние до объекта';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Объектив';
 ?>
