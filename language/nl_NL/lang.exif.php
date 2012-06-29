@@ -81,4 +81,6 @@ $lang['exif_value_sharpness_soft'] = 'zacht';
 $lang['exif_value_white_balance_auto'] = 'automatisch';
 $lang['exif_value_white_balance_manual'] = 'handmatig'; 
 
+$lang['exif_field_SubjectDistance'] = 'Afstand tot onderwerp';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Lens';
 ?>
