@@ -1,0 +1,2 @@
+EXIF v2.2 şartnamesine karşılık gelen EXIF değerlerini okunabilir ve anlaşılabilir yerel verilere çevirir.
+Detaylar için http://www.exif.org
