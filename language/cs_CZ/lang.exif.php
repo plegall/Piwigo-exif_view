@@ -68,7 +68,7 @@ $lang['exif_value_light_source_standard_light_b'] = 'standardní světlo B';
 $lang['exif_value_light_source_standard_light_c'] = 'standardní světlo C';
 $lang['exif_value_light_source_tungsten'] = 'žárovka';
 $lang['exif_value_light_source_unknown'] = 'neznámý';
-$lang['exif_value_light_source_white_fluorescent'] = 'bílá zářivka (WW 3200 – 3700K)';
+$lang['exif_value_light_source_white_fluorescent'] = 'bílá zářivka (barevní teplota 3200 – 3700K)';
 $lang['exif_value_metering_mode_CenterWeightedAVG'] = 'průměr s váženým středem';
 $lang['exif_value_metering_mode_average'] = 'průměr';
 $lang['exif_value_metering_mode_multispot'] = 'vícebodové';
@@ -86,4 +86,6 @@ $lang['exif_value_sharpness_soft'] = 'nízká';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'ruční';
 
+$lang['exif_field_SubjectDistance'] = 'Zaostřená vzdálenost';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Objektiv';
 ?>
