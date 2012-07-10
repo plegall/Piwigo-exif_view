@@ -1,22 +1,22 @@
 <?php
 
 $lang['exif_field_Contrast'] = 'تباين';
-$lang['exif_field_DateTimeOriginal'] = 'تاريخ الوقت في الأصل';
+$lang['exif_field_DateTimeOriginal'] = 'تاريخ و الوقت الأصلي';
 $lang['exif_field_DigitalZoomRatio'] = 'الزوم الرقمي';
 $lang['exif_field_ExifVersion'] = 'EXIF';
 $lang['exif_field_ExposureBiasValue'] = 'التعرض للتعويضات';
-$lang['exif_field_ExposureMode'] = 'وضع التعرض';
-$lang['exif_field_ExposureProgram'] = 'برنامج التعرض';
-$lang['exif_field_ExposureTime'] = 'وقت التعرض';
+$lang['exif_field_ExposureMode'] = 'وضع التعريض';
+$lang['exif_field_ExposureProgram'] = 'برنامج التعريض';
+$lang['exif_field_ExposureTime'] = 'مدة التعريض';
 $lang['exif_field_FNumber'] = 'فتحة العدسة';
 $lang['exif_field_Flash'] = 'الفلاش';
 $lang['exif_field_FocalLength'] = 'لبعد البؤري';
 $lang['exif_field_FocalLengthIn35mmFilm'] = 'لبعد البؤري في 35mm فيلم';
 $lang['exif_field_ISOSpeedRatings'] = 'الحساسية ';
 $lang['exif_field_LightSource'] = 'مصدر الضوء';
-$lang['exif_field_Make'] = 'صانع';
+$lang['exif_field_Make'] = 'الشركه المصنعه';
 $lang['exif_field_MeteringMode'] = 'وضع قياس التعريض';
-$lang['exif_field_Model'] = 'نموذج';
+$lang['exif_field_Model'] = 'موديل الكاميرا';
 $lang['exif_field_Saturation'] = 'التشبع';
 $lang['exif_field_Sharpness'] = 'الحدة';
 $lang['exif_field_Software'] = 'EXIF برنامج';
@@ -27,7 +27,7 @@ $lang['exif_value_contrast_soft'] = 'خفيف';
 $lang['exif_value_exposure_mode_auto'] = 'آلي';
 $lang['exif_value_exposure_mode_auto_bracket'] = 'الاقواس الذاتية';
 $lang['exif_value_exposure_mode_manual'] = 'يدوي';
-$lang['exif_value_exposure_program_action'] = 'حدث';
+$lang['exif_value_exposure_program_action'] = 'حركه';
 $lang['exif_value_exposure_program_aperture'] = 'فتحة العدسة';
 $lang['exif_value_exposure_program_creative'] = 'خلاق';
 $lang['exif_value_exposure_program_landscape'] = 'مشهد';
