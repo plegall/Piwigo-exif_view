@@ -86,4 +86,6 @@ $lang['exif_value_sharpness_soft'] = 'nízka';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'ručné';
 
+$lang['exif_field_SubjectDistance'] = 'Zaostrovaci avzdialenosť';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Objektív';
 ?>
