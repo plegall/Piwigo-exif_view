@@ -81,4 +81,6 @@ $lang['exif_value_sharpness_soft'] = 'mīksts';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'manuāls';
 
+$lang['exif_field_SubjectDistance'] = 'Priekšmeta attālums';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Lēca';
 ?>
