@@ -22,7 +22,7 @@
 // +-----------------------------------------------------------------------+
 $lang['exif_field_Contrast'] = 'Kontrast';
 $lang['exif_field_DateTimeOriginal'] = 'Orjinalin Saat ve Tarihi';
-$lang['exif_field_DigitalZoomRatio'] = 'SayısalYakınlaştırma';
+$lang['exif_field_DigitalZoomRatio'] = 'Sayısal Yakınlaştırma';
 $lang['exif_field_ExifVersion'] = 'EXIF';
 $lang['exif_field_ExposureBiasValue'] = 'Pozlama Telafisi';
 $lang['exif_field_ExposureMode'] = 'Pozlama Tarzı';
