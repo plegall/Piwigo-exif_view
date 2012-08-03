@@ -81,4 +81,6 @@ $lang['exif_value_sharpness_soft'] = 'suave';
 $lang['exif_value_white_balance_auto'] = 'automatico';
 $lang['exif_value_white_balance_manual'] = 'manual';
 
+$lang['exif_field_SubjectDistance'] = 'Distancia del objecto';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Objetivo';
 ?>
