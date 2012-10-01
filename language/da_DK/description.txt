@@ -1,0 +1,1 @@
+Konverterer EXIF-værdier til menneskeligt læsbare lokaltilpassede værdier. Svarer til EXIF-specifikation 2.2, detaljerede oplysninger på http://www.exif.org. Let at udvide.
