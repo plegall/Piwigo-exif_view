@@ -86,4 +86,6 @@ $lang['exif_value_sharpness_soft'] = '柔软';
 $lang['exif_value_white_balance_auto'] = '自动';
 $lang['exif_value_white_balance_manual'] = '手动';
 
+$lang['exif_field_SubjectDistance'] = '物距';
+$lang['exif_field_UndefinedTag:0xA434'] = '镜头';
 ?>
