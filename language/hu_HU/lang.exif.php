@@ -80,4 +80,7 @@ $lang['exif_value_sharpness_normal'] = 'normál';
 $lang['exif_value_sharpness_soft'] = 'lágy';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'kézi';
+$lang['exif_field_ExposureMode'] = 'Expozíciós mód';
+$lang['exif_field_ExposureProgram'] = 'Expozíciós program';
+$lang['exif_field_MeteringMode'] = 'Expozíciós mérési mód';
 ?>
