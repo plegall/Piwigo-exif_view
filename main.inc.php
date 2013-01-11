@@ -208,7 +208,7 @@ function exif_key_translation($key, $value) {
    // focal length
    if (!(strpos($key, 'FocalLength') === FALSE)) {
       $tokens = explode('/', $value);
-      return ($tokens[0]/$tokens[1]).' mm';
+      return (round($tokens[0]/$tokens[1])).' mm';
    }
 
    // digital zoom
