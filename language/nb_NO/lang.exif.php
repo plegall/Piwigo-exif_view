@@ -81,4 +81,6 @@ $lang['exif_value_sharpness_soft'] = 'myk';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'manuell';
 
+$lang['exif_field_SubjectDistance'] = 'Avstand til subjekt';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Linse';
 ?>
