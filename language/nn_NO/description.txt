@@ -1,0 +1,1 @@
+Viser EXIF-verdiar som lesbare omsette verdiar. Fylgjer EXIF-spesifikasjon 2.2 - for meir detaljar sjå http://wwww.exif.org. Enkel å utvide.
