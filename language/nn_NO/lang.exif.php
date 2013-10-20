@@ -84,4 +84,11 @@ $lang['exif_field_Model'] = 'Modell';
 $lang['exif_field_Saturation'] = 'Fargemetting';
 $lang['exif_field_Sharpness'] = 'Skarpheit';
 $lang['exif_field_Software'] = 'EXIF-program';
+$lang['exif_value_light_source_coolwhite_fluorescent_w'] = 'kvitt kaldt ljos';
+$lang['exif_value_light_source_daylight_fluorescent_d'] = 'dagsljossrør (D 5700 - 7100K)';
+$lang['exif_value_light_source_daywhite_fluorescent_n'] = 'kvitt dagsljosrør (N 4600 - 5400K)';
+$lang['exif_value_light_source_fine_weather'] = 'fint vær';
+$lang['exif_value_light_source_fluorescent'] = 'ljossrør (fluorescent)';
+$lang['exif_value_light_source_tungsten'] = 'glødepære (tungsten)';
+$lang['exif_value_light_source_white_fluorescent'] = 'kvitt ljosrør (WW 3200 - 3700K)';
 ?>
