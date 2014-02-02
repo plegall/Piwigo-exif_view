@@ -81,46 +81,6 @@ function formatDate($date) {
 }
 
 /**
- * GPS function stolen from plugin rv_gmaps
- */
-function ev_parse_fract( $f )
-{
-  $nd = explode( '/', $f );
-  return $nd[0]/$nd[1];
-}
-
-function ev_parse_lat_lon( $arr )
-{
-  $v=0;
-  $v += ev_parse_fract( $arr[0] );
-  $v += ev_parse_fract( $arr[1] )/60;
-  $v += ev_parse_fract( $arr[2] )/3600;
-  return $v;
-}
-
-function ev_exif_to_lat_lon( $exif )
-{
-  $exif = array_intersect_key( $exif, array_flip( array('GPSLatitudeRef', 'GPSLatitude', 'GPSLongitudeRef', 'GPSLongitude') ) );
-  if ( count($exif)!=4 )
-    return '';
-  if ( !in_array($exif['GPSLatitudeRef'], array('S', 'N') ) )
-    return 'GPSLatitudeRef not S or N';
-  if ( !in_array($exif['GPSLongitudeRef'], array('W', 'E') ) )
-    return 'GPSLongitudeRef not W or E';
-  if (!is_array($exif['GPSLatitude']) or !is_array($exif['GPSLongitude']) )
-    return 'GPSLatitude and GPSLongitude are not arrays';
-  
-  $lat = ev_parse_lat_lon( $exif['GPSLatitude'] );
-  if ( $exif['GPSLatitudeRef']=='S' )
-    $lat = -$lat;
-  $lon = ev_parse_lat_lon( $exif['GPSLongitude'] );
-  if ( $exif['GPSLongitudeRef']=='W' )
-    $lon = -$lon;
-  
-  return array ($lat,$lon);
-}
-
-/**
  * EXIF translation.
  *
  * @param $key EXIF key name
@@ -403,15 +363,6 @@ function exif_translation($exif) {
 	 if (is_array($exif)) {
    	 loadLang();
 
-     // extract latitude/longitude
-     $latlon = ev_exif_to_lat_lon($exif);
-     
-     if (!empty($latlon))
-     {
-       $exif['GPSLatitude'] = sprintf('%.6f', $latlon[0]);
-       $exif['GPSLongitude'] = sprintf('%.6f', $latlon[1]);
-     }
-     
 	   foreach ($exif as $key => $value) {
 	 		 $exif[$key] = exif_key_translation($key, $value);
 	   }
