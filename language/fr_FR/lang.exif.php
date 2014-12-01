@@ -20,7 +20,7 @@ $lang['exif_field_FocalLength'] = 'Longueur de focale';
 $lang['exif_field_FocalLengthIn35mmFilm'] = 'Longueur de focale en équivalent 35mm';
 $lang['exif_field_ISOSpeedRatings'] = 'ISO';
 $lang['exif_field_LightSource'] = 'Light Source';
-$lang['exif_field_Make'] = 'FR Maker';
+$lang['exif_field_Make'] = 'Marque';
 $lang['exif_field_MeteringMode'] = 'Mode posemètre';
 $lang['exif_field_Model'] = 'Modèle';
 $lang['exif_field_Saturation'] = 'Saturation';
@@ -88,5 +88,3 @@ $lang['exif_value_sharpness_normal'] = 'normal';
 $lang['exif_value_sharpness_soft'] = 'douce';
 $lang['exif_value_white_balance_auto'] = 'automatique';
 $lang['exif_value_white_balance_manual'] = 'manuel';
-
-?>
