@@ -1,9 +1,9 @@
 <?php
 
 $lang['exif_field_Contrast'] = 'Kontrast';
-$lang['exif_field_DateTimeOriginal'] = 'Tag/Uhrzeit des Originals';
+$lang['exif_field_DateTimeOriginal'] = 'Tag/ Uhrzeit des Originals';
 $lang['exif_field_DigitalZoomRatio'] = 'Digitaler Zoom';
-$lang['exif_field_ExifVersion'] = 'EXIF Version';
+$lang['exif_field_ExifVersion'] = 'EXIF-Version';
 $lang['exif_field_ExposureBiasValue'] = 'Belichtungsabweichung';
 $lang['exif_field_ExposureMode'] = 'Belichtungsmodus';
 $lang['exif_field_ExposureProgram'] = 'Belichtungsprogramm';
@@ -19,7 +19,7 @@ $lang['exif_field_MeteringMode'] = 'Belichtungsmessung Modus';
 $lang['exif_field_Model'] = 'Modell';
 $lang['exif_field_Saturation'] = 'Sättigung';
 $lang['exif_field_Sharpness'] = 'Schärfe';
-$lang['exif_field_Software'] = 'EXIF Software';
+$lang['exif_field_Software'] = 'EXIF-Software';
 $lang['exif_field_WhiteBalance'] = 'Weißabgleich';
 $lang['exif_value_contrast_hard'] = 'hart';
 $lang['exif_value_contrast_normal'] = 'normal';
@@ -48,10 +48,10 @@ $lang['exif_value_light_source_D55'] = 'D55';
 $lang['exif_value_light_source_D65'] = 'D65';
 $lang['exif_value_light_source_D75'] = 'D75';
 $lang['exif_value_light_source_cloudy_weather'] = 'bewölktes Wetter';
-$lang['exif_value_light_source_coolwhite_fluorescent_w'] = 'kaltes weiß (W 3900 � 4500K)';
+$lang['exif_value_light_source_coolwhite_fluorescent_w'] = 'kaltes Weiß (W 3900 - 4500K)';
 $lang['exif_value_light_source_daylight'] = 'Tageslicht';
-$lang['exif_value_light_source_daylight_fluorescent_d'] = 'Tageslicht (D 5700 � 7100K)';
-$lang['exif_value_light_source_daywhite_fluorescent_n'] = 'Weißes Tageslicht-Kaltlicht (N 4600 � 5400K)';
+$lang['exif_value_light_source_daylight_fluorescent_d'] = 'Tageslicht (D 5700 - 7100K)';
+$lang['exif_value_light_source_daywhite_fluorescent_n'] = 'Weißes Tageslicht-Kaltlicht (N 4600 - 5400K)';
 $lang['exif_value_light_source_fine_weather'] = 'Schönwetter';
 $lang['exif_value_light_source_flash'] = 'Blitz';
 $lang['exif_value_light_source_fluorescent'] = 'ausgestrahltes Fluoreszenzlicht';
@@ -63,7 +63,7 @@ $lang['exif_value_light_source_standard_light_b'] = 'Standart Licht B';
 $lang['exif_value_light_source_standard_light_c'] = 'Standart Licht C';
 $lang['exif_value_light_source_tungsten'] = 'Glühlampe';
 $lang['exif_value_light_source_unknown'] = 'unbekannt';
-$lang['exif_value_light_source_white_fluorescent'] = 'Leuchtstofflampe (WW 3200 � 3700K)';
+$lang['exif_value_light_source_white_fluorescent'] = 'Leuchtstofflampe (WW 3200 - 3700K)';
 $lang['exif_value_metering_mode_CenterWeightedAVG'] = 'Mittenbetont integral ';
 $lang['exif_value_metering_mode_average'] = 'integral';
 $lang['exif_value_metering_mode_multispot'] = 'Mehrpunkt';
@@ -81,6 +81,5 @@ $lang['exif_value_sharpness_soft'] = 'weich';
 $lang['exif_value_white_balance_auto'] = 'auto';
 $lang['exif_value_white_balance_manual'] = 'manuell';
 
-$lang['exif_field_SubjectDistance'] = 'Objekt Entfernung';
+$lang['exif_field_SubjectDistance'] = 'Entfernung zum Objekt';
 $lang['exif_field_UndefinedTag:0xA434'] = 'Objektiv';
-?>
