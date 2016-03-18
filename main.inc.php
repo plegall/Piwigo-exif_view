@@ -48,6 +48,12 @@ $conf['show_exif_fields'] = array(
 
 */
 
+add_event_handler('loading_lang', 'exifview_loading_lang');
+function exifview_loading_lang()
+{
+  load_language('lang.exif', exif_PATH);
+}
+
 add_event_handler('format_exif_data', 'exif_translation' );
 
 /**
@@ -395,13 +401,6 @@ function exif_key_translation($key, $value) {
 }
 define('exif_DIR' , basename(dirname(__FILE__)));
 define('exif_PATH' , PHPWG_PLUGINS_PATH . exif_DIR . '/');
-	/**
-	 * Loads plugin language file.
-	 */
-  function loadLang() {
-    global $lang;
-    load_language('lang.exif', exif_PATH);
-  }
 
 /**
  * EXIF translation.
@@ -413,8 +412,6 @@ define('exif_PATH' , PHPWG_PLUGINS_PATH . exif_DIR . '/');
 function exif_translation($exif) {
 	 // translate all exif fields
 	 if (is_array($exif)) {
-   	 loadLang();
-
 	   foreach ($exif as $key => $value) {
 	 		 $exif[$key] = exif_key_translation($key, $value);
 	   }
