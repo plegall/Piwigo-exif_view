@@ -8,17 +8,6 @@ Author URI: mailto:maple@seznam.cz&subject=PWG%20EXIF%20View
 */
 
 /*
--------------------------------------------------------------------------------
-Change log:
-
-0.2, 23th August 2007
-- exposurue bias fix, date time original formatting
-
-0.1, 1st August 2007
-- initial version
-
-
--------------------------------------------------------------------------------
 
 Extend your configuration in /include/config.local.inc.php file - example:
 
@@ -265,7 +254,14 @@ function exif_key_translation($key, $value) {
       $tokens = explode('/', $value);
       if (isset($tokens[1]))
       {  
-        $distance = $tokens[0]/$tokens[1];
+        if ($tokens[1] > 0)
+        {
+          $distance = ($tokens[0]/$tokens[1]);
+        }
+        else
+        {
+          $distance = $tokens[0];
+        }
       }
       else
       {  
