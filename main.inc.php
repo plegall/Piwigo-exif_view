@@ -109,6 +109,11 @@ function exif_key_translation($key, $value) {
         }
         elseif ($tokens[1] > 0)
         {
+          if ($tokens[1] == 1)
+          {
+            return $tokens[0].' s';
+          }
+
           while ($tokens[0] % 10 == 0)
           {
             $tokens[0] = $tokens[0] / 10;
