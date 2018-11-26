@@ -5,7 +5,10 @@
 //$lang_info['direction'] = 'ltr';
 //$lang_info['code'] = 'en';
 
+
+$lang['exif_field_Artist'] = 'Artist';
 $lang['exif_field_Contrast'] = 'Contrast';
+$lang['exif_field_Copyright'] = 'Copyright';
 $lang['exif_field_DateTimeOriginal'] = 'Date Time of Original';
 $lang['exif_field_DigitalZoomRatio'] = 'Digital Zoom';
 $lang['exif_field_ExifVersion'] = 'EXIF';
@@ -18,6 +21,7 @@ $lang['exif_field_Flash'] = 'Flash';
 $lang['exif_field_FocalLength'] = 'Focal Length';
 $lang['exif_field_FocalLengthIn35mmFilm'] = 'Focal Length in 35mm Film';
 $lang['exif_field_ISOSpeedRatings'] = 'ISO';
+$lang['exif_field_ImageDescription'] = 'Description';
 $lang['exif_field_LightSource'] = 'Light Source';
 $lang['exif_field_Make'] = 'Maker';
 $lang['exif_field_MeteringMode'] = 'Exposure Metering Mode';
@@ -25,9 +29,10 @@ $lang['exif_field_Model'] = 'Model';
 $lang['exif_field_Saturation'] = 'Saturation';
 $lang['exif_field_Sharpness'] = 'Sharpness';
 $lang['exif_field_Software'] = 'EXIF software';
-$lang['exif_field_WhiteBalance'] = 'White Balancing';
-$lang['exif_field_UndefinedTag:0xA434'] = 'Lens';
 $lang['exif_field_SubjectDistance'] = 'Subject Distance';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Lens';
+$lang['exif_field_UserComment'] = 'Comment';
+$lang['exif_field_WhiteBalance'] = 'White Balancing';
 $lang['exif_value_contrast_hard'] = 'hard';
 $lang['exif_value_contrast_normal'] = 'normal';
 $lang['exif_value_contrast_soft'] = 'soft';

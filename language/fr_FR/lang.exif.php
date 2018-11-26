@@ -6,7 +6,9 @@
 //$lang_info['code'] = 'fr';
 //é
 
+$lang['exif_field_Artist'] = 'Artist';
 $lang['exif_field_Contrast'] = 'Contraste';
+$lang['exif_field_Copyright'] = 'Droits d\'auteur';
 $lang['exif_field_DateTimeOriginal'] = 'Date et heure (originel)';
 $lang['exif_field_DigitalZoomRatio'] = 'Digital Zoom';
 $lang['exif_field_ExifVersion'] = 'EXIF';
@@ -19,6 +21,7 @@ $lang['exif_field_Flash'] = 'Flash';
 $lang['exif_field_FocalLength'] = 'Longueur de focale';
 $lang['exif_field_FocalLengthIn35mmFilm'] = 'Longueur de focale en équivalent 35mm';
 $lang['exif_field_ISOSpeedRatings'] = 'ISO';
+$lang['exif_field_ImageDescription'] = 'Description';
 $lang['exif_field_LightSource'] = 'Source de lumière';
 $lang['exif_field_Make'] = 'Marque';
 $lang['exif_field_MeteringMode'] = 'Mode posemètre';
@@ -26,9 +29,10 @@ $lang['exif_field_Model'] = 'Modèle';
 $lang['exif_field_Saturation'] = 'Saturation';
 $lang['exif_field_Sharpness'] = 'Netteté';
 $lang['exif_field_Software'] = 'Logiciel d\'EXIF';
-$lang['exif_field_WhiteBalance'] = 'Balance des blancs';
-$lang['exif_field_UndefinedTag:0xA434'] = 'Objectif';
 $lang['exif_field_SubjectDistance'] = 'Distance du sujet';
+$lang['exif_field_UndefinedTag:0xA434'] = 'Objectif';
+$lang['exif_field_UserComment'] = 'Commentaire';
+$lang['exif_field_WhiteBalance'] = 'Balance des blancs';
 $lang['exif_value_contrast_hard'] = 'dur';
 $lang['exif_value_contrast_normal'] = 'normal';
 $lang['exif_value_contrast_soft'] = 'doux';
