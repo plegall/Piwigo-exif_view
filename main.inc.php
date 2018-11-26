@@ -87,7 +87,7 @@ function exif_key_translation($key, $value) {
 	if (!(strpos($key, 'ExifVersion') === FALSE)) {
       return $value[1].'.'.$value[2];
    }
-   
+
    // Date Time Original
    if (!(strpos($key, 'DateTimeOriginal') === FALSE)) {
      // to fix bug:1862 the easiest way without releasing a new version of
@@ -119,7 +119,7 @@ function exif_key_translation($key, $value) {
             $tokens[0] = $tokens[0] / 10;
             $tokens[1] = $tokens[1] / 10;
           }
-          
+
           if ($tokens[1] == 1)
           {
             return $tokens[0].' s';
@@ -147,7 +147,7 @@ function exif_key_translation($key, $value) {
    }
 
    // flash
-   if (!(strpos($key, 'Flash') === FALSE)) {
+   if ($key === 'Flash') {
       // 1st bit is fired/did not fired
       if (($value & 1) > 0) {
          $retValue = l10n('yes');
@@ -258,7 +258,7 @@ function exif_key_translation($key, $value) {
    if (!(strpos($key, 'SubjectDistance') === FALSE)) {
       $tokens = explode('/', $value);
       if (isset($tokens[1]))
-      {  
+      {
         if ($tokens[1] > 0)
         {
           $distance = ($tokens[0]/$tokens[1]);
@@ -269,7 +269,7 @@ function exif_key_translation($key, $value) {
         }
       }
       else
-      {  
+      {
         $distance = $value;
       }
       return $distance.' m';
@@ -338,7 +338,7 @@ function exif_key_translation($key, $value) {
          default: return '';
       }
    }
-   
+
    // light source
    if (!(strpos($key, 'LightSource') === FALSE)) {
       switch ($value) {
