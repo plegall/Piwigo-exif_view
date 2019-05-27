@@ -277,7 +277,12 @@ function exif_key_translation($key, $value) {
 
    // XResolution or YResolution
    if (!(strpos($key, 'Resolution') === FALSE)) {
-      $tokens = explode('/', $value);
+      if (is_array($value)) {
+        $tokens = $value;
+      }
+      else {
+        $tokens = explode('/', $value);
+      }
       if (isset($tokens[1]))
       {
         $distance = $tokens[0]/$tokens[1];
