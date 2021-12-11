@@ -1,0 +1,1 @@
+Pretvori vrednosti EXIF v človeku berljive lokalizirane vrednosti. Ustreza specifikaciji EXIF 2.2, podrobnosti na http://www.exif.org. Preprosto razširljiv.
