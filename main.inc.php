@@ -148,6 +148,8 @@ function exif_key_translation($key, $value) {
 
    // flash
    if (!(strpos($key, 'Flash') === FALSE)) {
+      $value = (int)$value;
+
       // 1st bit is fired/did not fired
       if (($value & 1) > 0) {
          $retValue = l10n('yes');
