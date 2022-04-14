@@ -1,0 +1,1 @@
+Breytir EXIF gildum í læsileg staðbundin gildi. Samsvarar EXIF forskrift 2.2, upplýsingar á http://www.exif.org. Auðvelt að stækka.
