@@ -180,49 +180,13 @@ function exif_key_translation($key, $value) {
    // exposure bias
    if (!(strpos($key, 'ExposureBiasValue') === FALSE)) {
       $tokens = explode('/', $value);
-      $newValue = $tokens[0] / $tokens[1];
-      // max EV range +-
-      $maxEV = 5;
-      // default value
-      $retValue = $newValue;
-      $absValue = truncate(abs($newValue), 2);
-      $found = FALSE;
-      // find through 1/3
-      for ($i = 1; $i <= $maxEV * 3 ; $i++) {
-         $ev = floor($i * 1/3.0 * 100) / 100;
-         if ($ev == $absValue) {
-            if ($i > 3) {
-               $retValue = (truncate($i / 3)).' '.($i % 3).'/3';
-            } else {
-               $retValue = $i.'/3';
-            }
-            $found = TRUE;
-            break;
-         }
+
+      if (0 == $tokens[1])
+      {
+        return ($tokens[0] < 0 ? '-' : '+').'&infin; EV';
       }
-      // find through 1/2
-      if (!$found) {
-         for ($i = 1; $i <= $maxEV * 2 ; $i++) {
-            $ev = floor($i * 1/2.0 * 100) / 100;
-            if ($ev == $absValue) {
-               if ($i > 2) {
-                  $retValue = ($i / 2).' '.($i % 2).'/2';
-               } else {
-                  $retValue = $i.'/2';
-               }
-               $found = TRUE;
-               break;
-            }
-         }
-      }
-      // signs
-      if (($newValue < 0) && $found) {
-         $retValue = '- '.$retValue;
-      }
-      if ($newValue > 0) {
-         $retValue = '+ '.$retValue;
-      }
-      return $retValue.' EV';
+
+      return sprintf('%.1f EV', $tokens[0] / $tokens[1]);
    }
 
    // focal length 35mm
