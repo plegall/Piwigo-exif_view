@@ -1,0 +1,1 @@
+Convertit les noms de valeurs 'EXIF' dans la langue du pays. Correspond à la spécification EXIF 2.2, les détails dans http://www.exif.org. Facilement extensible.
