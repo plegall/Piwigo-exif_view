@@ -76,6 +76,33 @@ function formatDate($date) {
 }
 
 /**
+ * Splits the value by slash and tries to divide the first token by the second
+ * If the slash is not found, value is returned
+ * If the the second element is 0, returns the first
+ *  
+ * @param value the value to be divided
+ */ 
+function safeDivide($value) {
+  $tokens = explode('/', $value);
+  
+  if (isset($tokens[1]))
+  {
+    if ($tokens[1] != 0)
+    {
+      return ($tokens[0]/$tokens[1]);
+    }
+    else
+    {
+      return $tokens[0];
+    }
+  }
+  else
+  {
+    return $value;
+  }
+}
+
+/**
  * EXIF translation.
  *
  * @param $key EXIF key name
@@ -142,8 +169,7 @@ function exif_key_translation($key, $value) {
 
    // aperture
 	 if (!(strpos($key, 'FNumber') === FALSE)) {
-      $tokens = explode('/', $value);
-      return $tokens[0]/$tokens[1];
+      return safeDivide($value);
    }
 
    // flash
@@ -196,8 +222,7 @@ function exif_key_translation($key, $value) {
 
    // focal length
    if (!(strpos($key, 'FocalLength') === FALSE)) {
-      $tokens = explode('/', $value);
-      return (round($tokens[0]/$tokens[1])).' mm';
+      return safeDivide($value).' mm';
    }
 
    // digital zoom
