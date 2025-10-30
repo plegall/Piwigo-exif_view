@@ -143,7 +143,7 @@ function exif_key_translation($key, $value) {
    // aperture
 	 if (!(strpos($key, 'FNumber') === FALSE)) {
       $tokens = explode('/', $value);
-      return $tokens[0]/$tokens[1];
+      return $tokens[0]/($tokens[1]??10);
    }
 
    // flash
@@ -197,7 +197,7 @@ function exif_key_translation($key, $value) {
    // focal length
    if (!(strpos($key, 'FocalLength') === FALSE)) {
       $tokens = explode('/', $value);
-      return (round($tokens[0]/$tokens[1])).' mm';
+      return (round($tokens[0]/($tokens[1]??10))).' mm';
    }
 
    // digital zoom
