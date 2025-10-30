@@ -242,7 +242,7 @@ function exif_key_translation($key, $value) {
    }
 
    // XResolution or YResolution
-   if (!(strpos($key, 'Resolution') === FALSE)) {
+   if (in_array($key, array('XResolution', 'YResolution'))) {
       $tokens = explode('/', $value);
       if (isset($tokens[1]))
       {
