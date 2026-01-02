@@ -98,50 +98,54 @@ function exif_key_translation($key, $value) {
    }
 
    // exposure time
-	 if (!(strpos($key, 'ExposureTime') === FALSE)) {
+   if (!(strpos($key, 'ExposureTime') === FALSE)) {
+      // Expsure time is formatted in the following way:
+      // * value is an integer; return as integer
+      // * value is a fraction > 1/3; return as decimal
+      // * else; return as fraction
       $tokens = explode('/', $value);
+      $sec = '″';  // configure to your desired second symbol
 
-      if (isset($tokens[1]))
+      if (!isset($tokens[1])) {
+        $tokens[1] = 1;
+      }
+
+      if ($tokens[1] > 0)
       {
-        if ($tokens[0] == 0)
-        {
-          return '0 s';
-        }
-        elseif ($tokens[1] > 0)
-        {
-          if ($tokens[1] == 1)
-          {
-            return $tokens[0].' s';
-          }
-
-          while ($tokens[0] % 10 == 0)
-          {
-            $tokens[0] = $tokens[0] / 10;
-            $tokens[1] = $tokens[1] / 10;
-          }
-          
-          if ($tokens[1] == 1)
-          {
-            return $tokens[0].' s';
-          }
-          else
-          {
-            return '1/'.floor(1/($tokens[0]/$tokens[1])).' s';
-          }
-        }
+        if ($tokens[0] % $tokens[1] == 0)
+	{
+	  // check if x/y is an integer value
+          return ($tokens[0]/$tokens[1]).$sec;
+	}
+	elseif ($tokens[0] / $tokens[1] > 1)
+	{
+	  // a value larger than 1, e.g., 2.5s
+	  // print one digit after the comma
+	  $a = intdiv($tokens[0], $tokens[1]);
+	  $b = floor(10 * ($tokens[0] % $tokens[1]) / $tokens[1]);
+	  return $a.$sec.$b;
+	}
+	elseif ($tokens[0] / $tokens[1] >  1/3)
+	{
+          // Apparently, everything above 1/3 is displayed as a numerical value
+	  return round($tokens[0] / $tokens[1], 2).$sec;
+	}
         else
         {
-          return $tokens[0].' s';
+	  // return as fractional value
+          return '1/'.round(1/($tokens[0]/$tokens[1]));
         }
       }
       else
       {
-        return $value.' s';
+        // Note this will return tokens[0] if tokens[1] is 0!
+        // That is not a valid fraction though... Can this actually happen?
+        return $tokens[0].$sec;
       }
    }
 
    // aperture
-	 if (!(strpos($key, 'FNumber') === FALSE)) {
+   if (!(strpos($key, 'FNumber') === FALSE)) {
       $tokens = explode('/', $value);
       return $tokens[0]/($tokens[1]??10);
    }
