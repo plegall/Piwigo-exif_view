@@ -12,29 +12,32 @@ Author URI: mailto:maple@seznam.cz&subject=PWG%20EXIF%20View
 Extend your configuration in /include/config.local.inc.php file - example:
 
 $conf['show_exif_fields'] = array(
-  'Make',
-  'Model',
-  'ExifVersion',
-  'Software',
+  'Artist',
+  'Contrast',
+  'Copyright',
+  'COMPUTED;UserComment',
   'DateTimeOriginal',
-  'FNumber',
+  'ExifVersion',
   'ExposureBiasValue',
-  'FILE;FileSize',
+  'ExposureMode',
+  'ExposureProgram',
   'ExposureTime',
+  'FILE;FileSize',
+  'FNumber',
   'Flash',
-  'ISOSpeedRatings',
   'FocalLength',
   'FocalLengthIn35mmFilm',
-  'WhiteBalance',
-  'ExposureMode',
-  'MeteringMode',
-  'ExposureProgram',
+  'ISOSpeedRatings',
+  'ImageDescription',
   'LightSource',
-  'Contrast',
+  'Make',
+  'MeteringMode',
+  'Model',
   'Saturation',
   'Sharpness',
+  'Software',
+  'WhiteBalance',
   );
-
 */
 
 add_event_handler('loading_lang', 'exifview_loading_lang');
@@ -87,7 +90,7 @@ function exif_key_translation($key, $value) {
 	if (!(strpos($key, 'ExifVersion') === FALSE)) {
       return $value[1].'.'.$value[2];
    }
-   
+
    // Date Time Original
    if (!(strpos($key, 'DateTimeOriginal') === FALSE)) {
      // to fix bug:1862 the easiest way without releasing a new version of
@@ -119,7 +122,7 @@ function exif_key_translation($key, $value) {
             $tokens[0] = $tokens[0] / 10;
             $tokens[1] = $tokens[1] / 10;
           }
-          
+
           if ($tokens[1] == 1)
           {
             return $tokens[0].' s';
@@ -224,7 +227,7 @@ function exif_key_translation($key, $value) {
    if (!(strpos($key, 'SubjectDistance') === FALSE)) {
       $tokens = explode('/', $value);
       if (isset($tokens[1]))
-      {  
+      {
         if ($tokens[1] > 0)
         {
           $distance = ($tokens[0]/$tokens[1]);
@@ -235,7 +238,7 @@ function exif_key_translation($key, $value) {
         }
       }
       else
-      {  
+      {
         $distance = $value;
       }
       return $distance.' m';
@@ -304,7 +307,7 @@ function exif_key_translation($key, $value) {
          default: return '';
       }
    }
-   
+
    // light source
    if (!(strpos($key, 'LightSource') === FALSE)) {
       switch ($value) {
